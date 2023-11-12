@@ -1,0 +1,57 @@
+div div{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin: 20px;
+}
+div div:nth-child(odd){
+animation: animOdd 2s infinite;
+}
+div div:nth-child(even){
+    animation: animEven 2s infinite;
+}
+@keyframes animOdd{
+0%{
+    transform: scale(0.5, 0.5);
+}
+50%{
+    transform: scale(1, 1);
+}
+100%{
+    transform: scale(0.5, 0.5);
+}
+}
+@keyframes animEven{
+    0%{
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(0.5, 0.5);
+    }
+    100%{
+        transform: scale(1, 1);
+    }
+}
+/* div div{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin: 20px;
+}
+div:nth-child(odd){
+animation: anim 1s infinite;
+animation-direction: normal
+}
+div:nth-child(even){
+    animation: anim  1s infinite;
+    animation-direction: reverse;
+}
+@keyframes anim{
+0%{
+    transform: scale(0.5, 0.5);
+}
+
+100%{
+    transform: scale(1, 1);
+}
+} */
